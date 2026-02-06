@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QR Hunt - Level 1</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function checkAnswer() {
+            const ans = document.getElementById("ans").value.trim().toLowerCase();
+
+            if (ans === "water") {
+                // redirect to Level 2 file
+                window.location.href = "level2.html";
+            } else {
+                alert("Wrong answer! Try again 🔍");
+            }
+        }
+    </script>
+</head>
+
+<body class="center">
+
+    <input type="text" id="ans" placeholder="Your answer">
+    <br><br>
+
+    <button onclick="checkAnswer()">Submit</button>
+
+</body>
+</html>

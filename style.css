@@ -1,0 +1,98 @@
+body {
+    background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Center container */
+.center {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 360px;
+    width: 90%;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Headings */
+h1, h2 {
+    color: #1b5e20;
+    margin-bottom: 15px;
+}
+
+/* Input box */
+input {
+    padding: 12px;
+    width: 100%;
+    max-width: 260px;
+    border-radius: 8px;
+    border: 1px solid #bbb;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #43a047;
+}
+
+/* Button */
+button {
+    margin-top: 15px;
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #2e7d32, #1b5e20);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Hint box */
+.hint {
+    margin-top: 25px;
+    background: #e8f5e9;
+    padding: 16px;
+    border-radius: 12px;
+    border-left: 5px solid #2e7d32;
+    font-size: 14px;
+    display: none;
+}
+
+/* =========================
+   Mobile Optimization
+   ========================= */
+@media (max-width: 600px) {
+
+    .center {
+        padding: 30px 18px;
+    }
+
+    input {
+        font-size: 22px;        /* BIG password text */
+        padding: 16px;
+    }
+
+    input[type="password"] {
+        letter-spacing: 2px;    /* cleaner password look */
+    }
+
+    button {
+        font-size: 18px;
+        padding: 14px 34px;
+    }
+
+    h1, h2 {
+        font-size: 22px;
+    }
+}
